@@ -5,7 +5,7 @@ def kettoB():
     # b. Ellenőrzötten csak 1 és 12 közötti számot fogadunk el a bekérés során!
     szam = beolvas.egeszSzamBeolvas()
     while (szam < 1) or (szam > 12):
-        print("A megadott szám rossz!")
+        print("A megadott szám nincs 1 és 12 között!")
         szam = beolvas.egeszSzamBeolvas()
 
     szam = round(szam, 0)

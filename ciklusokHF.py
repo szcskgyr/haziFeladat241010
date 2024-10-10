@@ -14,7 +14,7 @@ def tizennegy():
 def tizenot():
     # 15. Kérj be számot mindaddig, amíg negatív és 3-mal osztható nem lesz!
     szam = beolvas.tortSzamBeolvas()
-    while not( (szam%3==0) and (szam<0) ):
+    while not ( (szam%3==0) and (szam<0) ):
         print("A megadott szám nem negatív és nem osztható 3-mal!")
         szam = beolvas.tortSzamBeolvas()
     print("A megadott szám negatív és osztható 3-mal!")
@@ -52,7 +52,7 @@ def huszonegy():
     for i in range(5):
         szam = beolvas.tortSzamBeolvas()
         if (szam%2 == 0) and (szam != 0):
-            paros = paros + str(szam) + " "
+            paros = paros + str(int(szam)) + " "
     if paros != "":
         print("Páros számok: " + paros)
     else:
