@@ -1,6 +1,8 @@
 import beolvas
 
 def kettoB():
+    # 2. A program  olvasson be a konzolról egy egész számot! Ha a szám 1 és 12 közötti, akkor legyen a beolvasott szám egy hónap sorszáma! A program írja ki a konzolra a sorszámmal megadott hónap nevét! Hiba (1-nél kisebb vagy 12-nél nagyobb szám) esetén legyen hibaüzenet!
+    # b. Ellenőrzötten csak 1 és 12 közötti számot fogadunk el a bekérés során!
     szam = beolvas.egeszSzamBeolvas()
     while (szam < 1) or (szam > 12):
         print("A megadott szám rossz!")
