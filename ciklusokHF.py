@@ -22,7 +22,7 @@ def tizenot():
 def tizenhat():
     # 16. Kérj be számot mindaddig, amíg 3 jegyű pozitív szám nem lesz!
     szam = beolvas.tortSzamBeolvas()
-    while not( (szam>=100) and (szam<1000) and (szam.is_integer()) ):
+    while (szam<100) or (szam>=1000) or (not szam.is_integer()):
         print("A megadott szám nem pozitív 3 jegyű!")
         szam = beolvas.tortSzamBeolvas()
     print("A megadott szám pozitív 3 jegyű!")
